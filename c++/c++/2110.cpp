@@ -1,3 +1,4 @@
+/*
 #include <iostream>
 #include <algorithm>
 #include <vector>
@@ -50,3 +51,4 @@ int main() {
 	counter_maxdis();
 }
 //개념: 정렬된 배열에서 중간값을 찾아 중간값보다 작으면 작은 쪽, 크면 큰 쪽을 다시 탐색하는 알고리즘
+*/

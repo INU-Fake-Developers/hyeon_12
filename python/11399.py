@@ -1,5 +1,5 @@
 n = int(input())    #사람
-time = list(map(int,input().split()))
+time = list(map(int, input().split()))
 
 time.sort()
 
