@@ -1,7 +1,10 @@
+/*
 #include <iostream>
 #include <algorithm>
 #include <vector>
+//#include <chrono>	수행시간 측정 ㅇㅅㅇ
 using namespace std;
+//using namespace chrono;
 
 const int MAX = 100001; //최대 100000
 int n;
@@ -13,7 +16,7 @@ void dfs(int cur) {
 	visited[cur] = true;
 
 	for (int i = 0; i < adj[cur].size(); i++) {
-		int next = adj[cur][i];
+		int next = adj[cur][i];	
 		if (visited[next])	//다녀갔는지 확인해보기
 			continue;
 		parent[next] = cur;
@@ -22,6 +25,8 @@ void dfs(int cur) {
 }
 
 int main() {
+	//steady_clock::time_point start = steady_clock::now();
+
 	ios_base::sync_with_stdio(0);
 	cin.tie(0); cout.tie(0);
 
@@ -47,12 +52,20 @@ int main() {
 
 	dfs(1);	//트리의 루트(1)부터 반복 시키기 시작
 
-	for (int i = 2; i <= n; i++)
+	for (int i = 2; i <= n; i++)	//트리의 루트는 부모가 없으니 2부터 출력되게
 		cout << parent[i] << '\n';
+
+	//steady_clock::time_point end = steady_clock::now();
+
+	//duration<double> sec = end - start;
+	//cout << "elapsed time: " << sec.count() << "\n";
 
 	return 0;
 
 }
+*/
 //예제 입력에서 예제 출력을 추론하기 엄청 고생함.... 각 숫자 노드의 부모를 각 출력하는 거였음....
 //양방향 그래프라서 vector로 집어넣은 다음에
 //dfs안에서 방문했는지의 여부에 따라 recursion(반복) 시켜주면 됨
+
+//2.04796	0.56072

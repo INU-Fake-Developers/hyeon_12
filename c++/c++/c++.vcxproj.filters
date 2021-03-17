@@ -36,5 +36,8 @@
     <ClCompile Include="11725.cpp">
       <Filter>헤더 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11725-2.cpp">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
