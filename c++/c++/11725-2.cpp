@@ -1,4 +1,4 @@
-
+/*
 #include <iostream>
 #include <algorithm>
 #include <queue>	//FIFO(first in first out), stack이 LIFO(last in first out)
@@ -70,7 +70,7 @@ int main() {
 
 	return 0;
 }
-
+*/
 //양방향 그래프여서 벡터 사용
 //bfs(너비우선탐색) 인접한 노드를 차례대로 방문함. STL의 queue를 사용하면 쉽게 구현 가능
 //1.queue의 가장 앞노드 pop 
