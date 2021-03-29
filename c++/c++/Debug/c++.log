@@ -1,5 +1,4 @@
-﻿  11725-2.cpp
-  11725.cpp
-  코드를 생성하고 있습니다...
-C:\Users\admin\OneDrive\문서\GitHub\hyeon_12\c++\c++\11725.cpp(18,20): warning C4018:  '<': signed 또는 unsigned가 일치하지 않습니다.
+﻿  1260.cpp
+C:\Users\admin\OneDrive\문서\GitHub\hyeon_12\c++\c++\1260.cpp(16,20): warning C4018:  '<': signed 또는 unsigned가 일치하지 않습니다.
+C:\Users\admin\OneDrive\문서\GitHub\hyeon_12\c++\c++\1260.cpp(32,21): warning C4018:  '<': signed 또는 unsigned가 일치하지 않습니다.
   c++.vcxproj -> C:\Users\admin\OneDrive\문서\GitHub\hyeon_12\c++\Debug\c++.exe
