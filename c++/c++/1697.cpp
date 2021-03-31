@@ -20,7 +20,7 @@ int bfs(int n, int k) {
 				int xi = x + arr[j];
 				if (xi < 0 || xi>100000)	//범위 초과
 					continue;
-				if (!map[xi]) {	//false라면 갔다온곳이므로 다시 갈 필요가 없음
+				if (!map[xi]) {	//0이라면 밟아본적이 없는 곳
 					map[xi] = map[x] + 1;
 					q.push(xi);
 				}
