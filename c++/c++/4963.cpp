@@ -43,19 +43,20 @@ void search(int x, int y) {	//섬마을 제외하기
 }
 
 int main() {
-	int w = -1, h = -1, count;	//너비 높이
+	int w, h, count;	//너비 높이
 	vector<int> v;
-
-	cin >> w >> h;
-	while (w < 0 || w>50 || h < 0 || h>50) {
-		cout << "1<=w,h<=50\n";
-		cin.clear();
-		cin.ignore(999, '\n');
-		cin >> w >> h;
-	}
-
-	while (w != 0 && h != 0) {
+	while (true) {
 		count = 0;	//count 초기화
+		cin >> w >> h;
+		while (w < 0 || w>50 || h < 0 || h>50) {
+			cout << "1<=w,h<=50\n";
+			cin.clear();
+			cin.ignore(999, '\n');
+			cin >> w >> h;
+		}
+		if (w == 0 && h == 0)
+			break;
+
 		for (int i = 0; i < h; i++) {	//w,h순서로 했는데 h,w 순서가 맞다
 			for (int j = 0; j < w; j++) {
 				int n;
@@ -72,15 +73,6 @@ int main() {
 			}
 		}
 		v.push_back(count);	
-
-		cin >> w >> h;
-		while (w < 0 || w>50 || h < 0 || h>50) {
-			cout << "1<=w,h<=50\n";
-			cin.clear();
-			cin.ignore(999, '\n');
-			cin >> w >> h;
-		}
-
 	}
 	for (auto i : v)
 		cout << i << '\n';
