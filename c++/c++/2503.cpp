@@ -16,6 +16,7 @@ int main() {
 	int result=0;	//최종 정답, 영수가 생각하고 있을 가능성이 있는 답의 총 개수
 	int test;	//정답값과 스트라이크 볼의 개수가 맞는 확인하는 맞는 테스트 수
 	vector<question> v;	//question 구조체 백터
+	vector<int> vv;
 
 	int n;	//민영이가 영수에게 몇번이나 질문을 했는지를 나타내는 자연수 n
 	question input;	//input은 그냥 벡터이름
