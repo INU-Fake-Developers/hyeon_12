@@ -10,7 +10,7 @@ int main() {
 	int n;
 	int list[1001][3];
 	cin >> n;
-	while (n < 2 || n>1000) {
+	while (n < 2 || n>1000) {	//조건부 검사
 		cout << "2<=n<=1000\n";
 		cin.clear();
 		cin.ignore(999, '\n');
@@ -29,8 +29,8 @@ int main() {
 		list[i][1] += min(list[i - 1][0], list[i - 1][2]);
 		list[i][2] += min(list[i - 1][1], list[i - 1][0]);
 	}
-	int an = min(list[n-1][0], list[n-1][1]);
-	an = min(an, list[n-1][2]);
+
+	int an = min({ list[n - 1][0], list[n - 1][1] , list[n - 1][2] });
 	cout << an;
 
 	return 0;
